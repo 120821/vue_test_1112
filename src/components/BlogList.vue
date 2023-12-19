@@ -1,10 +1,6 @@
 <template>
   <div>
-    <table>
-      <tr v-for="blog in blogs" :key="blog.id" @click="showBlog(blog.id)">
-        <td>{{ blog.title }}</td>
-      </tr>
-    </table>
+    <a :href="'/blog/' + blog.id">{{ blog.title }}</a>
   </div>
 </template>
 
@@ -19,7 +15,7 @@ export default {
     const blogs = ref([]);
 
     const showBlog = (blogId) => {
-      router.push({ name: 'Blog', query: { id: blogId } });
+      router.push({ name: 'Blog', params: { id: blogId } });
     };
 
     onMounted(() => {

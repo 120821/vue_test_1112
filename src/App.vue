@@ -1,16 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/pink.webp">
-  <HelloWorld msg="hello"/>
+  <!--<img alt="Vue logo" src="./assets/pink.webp">-->
+  <!--<BlogList msg="blogs"/>                      -->
+  <!--<HelloWorld msg="hello"/>                    -->
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+<!--import HelloWorld from './components/HelloWorld.vue'-->
+<!--import BlogList from './components/BlogList.vue'    -->
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  <!--components: {-->
+  <!--  BlogList,  -->
+  <!--  HelloWorld -->
+  <!--}            -->
 }
 </script>
 
@@ -24,3 +30,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
